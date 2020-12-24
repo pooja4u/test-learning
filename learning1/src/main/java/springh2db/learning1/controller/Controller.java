@@ -13,7 +13,7 @@ import springh2db.learning1.service.EmpService;
 
 @RestController
 public class Controller{
-	
+	 
 	@Autowired EmpService ser;
 	@GetMapping(value="/a1/{id}/{rate}/{sal}")
 	public EmpTable call(@PathVariable int id, @PathVariable int rate, @PathVariable long sal){
